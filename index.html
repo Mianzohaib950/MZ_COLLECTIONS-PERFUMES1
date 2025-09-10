@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfume Brand</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+<!-- ===== HEADER NAVBAR ===== -->
+<header>        
+            
+  <h1 class="logo" >   MZ Collections</h1>
+  
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="social-icons">
+    <a href="#"><img src="facbook.png" alt="Facebook"> </a>
+    <a href="#"><img src="youtube.PNG" alt="YouTube"></a>
+    <a href="#"><img src="instagram.PNG" alt="Instagram"></a>
+    <a href="#"><img src="tiktok.PNG" alt="TikTok"></a>
+  </div>
+</header>
+<hr>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+
+  <!-- Radios -->
+  <input type="radio" name="slide" id="s1" checked>
+  <input type="radio" name="slide" id="s2">
+  <input type="radio" name="slide" id="s3">
+
+  <!-- Slides -->
+  <div class="slides">
+    <article class="slide" data-slide="1">
+      <div class="slide__image" style="background-image:url(pexels-zvolskiy-1805597.jpg);"></div>
+      <div class="slide__content">
+        <h1 class="slide__title">Luxury Perfume Collections</h1>
+        <p class="slide__subtitle">Discover premium fragrances crafted for elegance.</p>
+      </div>
+    </article>
+    <article class="slide" data-slide="2">
+      <div class="slide__image" style="background-image:url('single.2.jpg');"></div>
+      <div class="slide__content">
+        <h1 class="slide__title">Luxury Perfume Collections</h1>
+        <p class="slide__subtitle">Discover premium fragrances crafted for elegance.</p>
+      </div>
+    </article>
+    <article class="slide" data-slide="3">
+      <div class="slide__image" style="background-image:url('pexels-daria-liudnaya-8166566.jpg');"></div>
+      <div class="slide__content">
+        <h1 class="slide__title">Luxury Perfume Collections</h1>
+        <p class="slide__subtitle">Discover premium fragrances crafted for elegance.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <label for="s2" class="btn down">⌄</label>
+    <label for="s3" class="btn up">⌃</label>
+    <label for="s3" class="btn down">⌄</label>
+    <label for="s1" class="btn up">⌃</label>
+    <label for="s1" class="btn down">⌄</label>
+    <label for="s2" class="btn up">⌃</label>
+  </div>
+
+  <!-- Dots -->
+  <div class="dots">
+    <label for="s1"></label>
+    <label for="s2"></label>
+    <label for="s3"></label>
+  </div>
+
+</section>
+
+</body>
+</html>
+  <section class="filter-bar">
+    <select id="priceFilter">
+      <option value="all">Filter by Price</option>
+      <option value="low">Below Rs.4,000.00</option>
+      <option value="mid">4,000.00-5,000.00</option>
+      <option value="high">Above 6,000.00</option>
+    </select>
+    <select id="ownerFilter">
+      <option value="all">Filter by Brand</option>
+      <option value="Brand A">Brand A</option>
+      <option value="Brand B">Brand B</option>
+      <option value="Brand C">Brand C</option>
+    </select>
+  </section>
+
+
+
+  <!-- Filters -->
+  <section class="filters">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('men')">Men</button>
+    <button onclick="filterProducts('women')">Women</button>
+    <button onclick="filterProducts('unisex')">Unisex</button>
+  </section>
+
+  <!-- Product Listing -->
+  <section class="product-list" id="product-list">
+    <div class="product-card men">
+      <img src="Capture11.PNG" alt="Perfume 1">
+      <h3>Oud By Brand A</h3>
+      <p>Owner: Creed</p>
+      <p class="price">Rs.4,000.00</p>
+    </div>
+
+    <div class="product-card women">
+      <img src="Capture10.PNG" alt="Perfume 2">
+      <h3>Opal By Brand B</h3>
+      <p>Owner: Gucci</p>
+      <p class="price">Rs.4,000.00</p>
+    </div>
+
+    <div class="product-card unisex">
+      <img src="Capture13.PNG" alt="Perfume 3">
+      <h3>Xylo By Brand C </h3>
+      <p>Owner: Creed</p>
+      <p class="price">Rs.4,000.00</p>
+    </div>
+  
+  </section>
+
+  <section class="product-list" id="product-list">
+    <div class="product-card men">
+      <img src="Capture15.PNG" alt="Perfume 1">
+      <h3>Gradesia By Brand A</h3>
+      <p>Owner: Creed</p>
+      <p class="price">Rs.4,000.00</p>
+    </div>
+
+    <div class="product-card women">
+      <img src="Capture16.PNG" alt="Perfume 2">
+      <h3>Whisper By Brand B</h3>
+      <p>Owner: Gucci</p>
+      <p class="price">Rs.4,000.00</p>
+    </div>
+
+    <div class="product-card unisex">
+      <img src="Capture17.PNG" alt="Perfume 3">
+      <h3>MoonLight By Brand C</h3>
+      <p>Owner: Creed</p>
+      <p class="price">Rs.4,000.00</p>
+    </div>
+
+   
+  
+  </section>
+    <section class="product-list" id="product-list">
+    <div class="product-card men">
+      <img src="Capture11.PNG" alt="Perfume 1">
+      <h3>Oud By Brand A</h3>
+      <p>Owner: Creed</p>
+      <p class="price">Rs.4,000.00</p>
+    </div>
+
+    <div class="product-card women">
+      <img src="Capture10.PNG" alt="Perfume 2">
+      <h3>Opal By Brand B</h3>
+      <p>Owner: Gucci</p>
+      <p class="price">Rs.4,000.00</p>
+    </div>
+
+    <div class="product-card unisex">
+      <img src="Capture13.PNG" alt="Perfume 3">
+      <h3>Xylo By Brand C </h3>
+      <p>Owner: Creed</p>
+      <p class="price">Rs.4,000.00</p>
+    </div>
+  
+  </section>
+
+  <!-- Services Section -->
+ <section class="services">
+    <div class="service-card">🌸 Customer Service <br><small>We’re Here When You Need Us</small></div>
+    <div class="service-card">🚚 Fast Shipping <br><small>Get Fast Shipping Orders</small></div>
+    <div class="service-card">🕒 24/7 Service <br><small>Available Anytime</small></div>
+    <div class="service-card">💳 Secure Payment <br><small>Your Payment Is Safe</small></div>
+  </section>
+
+ 
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Quick links</h3>
+        <ul>
+          <li>ALL</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>Unisex</li>
+          <li>Product</li>
+          <li>Perfume</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Information</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+          <li>Refund & Returns Policy</li>
+          <li>Shipping Policy</li>
+          <li>Contact Us</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div class="footer-col newsletter">
+        <h2>Stay in the loop with our weekly newsletter</h2>
+        <div class="newsletter-box">
+          <input type="email" placeholder="Enter your email">
+          <button>→</button>
+        </div>
+        <div class="socials">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-tiktok"></i>
+        </div>
+        <div class="social-icons">
+    <a href="#"><img src="facbook.png" alt="Facebook"> </a>
+    <a href="#"><img src="youtube.PNG" alt="YouTube"></a>
+    <a href="#"><img src="instagram.PNG" alt="Instagram"></a>
+    <a href="#"><img src="tiktok.PNG" alt="TikTok"></a>
+  </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Contact Us: +92 334 4314146</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
